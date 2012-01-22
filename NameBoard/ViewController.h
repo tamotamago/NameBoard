@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SBTickerView.h"
 
 @interface ViewController : UIViewController
+{
+    
+}
+
+@property (nonatomic, strong) IBOutlet SBTickerView *nameTikerView_;
+
+-(IBAction)tick:(UIButton*)sender;
 
 @end
