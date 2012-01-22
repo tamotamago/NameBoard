@@ -21,8 +21,6 @@
 		38D0610014C84D0800132BFD /* SBTickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D060FB14C84D0800132BFD /* SBTickerView.m */; };
 		38D0610114C84D0800132BFD /* UIView+SBExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D060FD14C84D0800132BFD /* UIView+SBExtras.m */; };
 		38D0610414C84D1E00132BFD /* SBTickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D0610314C84D1E00132BFD /* SBTickView.m */; };
-		38D0610714C84DE400132BFD /* SBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D0610614C84DE400132BFD /* SBViewController.m */; };
-		38D0610914C84E4A00132BFD /* SBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38D0610814C84E4A00132BFD /* SBViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,9 +48,6 @@
 		38D060FD14C84D0800132BFD /* UIView+SBExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+SBExtras.m"; path = "Libraries/SBTickerView/UIView+SBExtras.m"; sourceTree = "<group>"; };
 		38D0610214C84D1E00132BFD /* SBTickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBTickView.h; sourceTree = "<group>"; };
 		38D0610314C84D1E00132BFD /* SBTickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBTickView.m; sourceTree = "<group>"; };
-		38D0610514C84DE400132BFD /* SBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBViewController.h; sourceTree = "<group>"; };
-		38D0610614C84DE400132BFD /* SBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBViewController.m; sourceTree = "<group>"; };
-		38D0610814C84E4A00132BFD /* SBViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,9 +102,6 @@
 				383E0E3214C4836E002CD77B /* MainStoryboard.storyboard */,
 				383E0E3514C4836E002CD77B /* ViewController.h */,
 				383E0E3614C4836E002CD77B /* ViewController.m */,
-				38D0610514C84DE400132BFD /* SBViewController.h */,
-				38D0610614C84DE400132BFD /* SBViewController.m */,
-				38D0610814C84E4A00132BFD /* SBViewController.xib */,
 				38D0610214C84D1E00132BFD /* SBTickView.h */,
 				38D0610314C84D1E00132BFD /* SBTickView.m */,
 				383E0E2714C4836E002CD77B /* Supporting Files */,
@@ -204,7 +196,6 @@
 			files = (
 				383E0E2B14C4836E002CD77B /* InfoPlist.strings in Resources */,
 				383E0E3414C4836E002CD77B /* MainStoryboard.storyboard in Resources */,
-				38D0610914C84E4A00132BFD /* SBViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,7 +214,6 @@
 				38D0610014C84D0800132BFD /* SBTickerView.m in Sources */,
 				38D0610114C84D0800132BFD /* UIView+SBExtras.m in Sources */,
 				38D0610414C84D1E00132BFD /* SBTickView.m in Sources */,
-				38D0610714C84DE400132BFD /* SBViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

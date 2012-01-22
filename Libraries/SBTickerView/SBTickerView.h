@@ -46,9 +46,17 @@ typedef enum {
 @property (nonatomic, strong) UIView *frontView;
 @property (nonatomic, strong) UIView *backView;
 @property (nonatomic, assign) CFTimeInterval duration; // default .5
+@property (nonatomic, assign) id delegate;
 
 @property (nonatomic, assign) BOOL panning; // default NO. If set to YES, this view will get an UIPanGestureRecognizer
 @property (nonatomic, assign) SBTickerViewAllowedPanDirection allowedPanDirections; // default SBTickerViewAllowedPanDirectionNone
 
 - (void)tick:(SBTickerViewTickDirection)direction animated:(BOOL)animated completion:(void (^)(void))completion;
+
+@end
+
+@protocol SBTickerViewControllerDelegate <NSObject>
+
+-(void)tickerViewDidTicked:(SBTickerView*)tickerView;
+
 @end

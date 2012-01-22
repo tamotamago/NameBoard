@@ -9,9 +9,18 @@
 #import "ViewController.h"
 #import "SBTickView.h"
 
+@interface ViewController()
+@property (nonatomic, strong) NSArray * nameArray;
+@property (nonatomic) NSInteger tickTime;
+@end
+
 @implementation ViewController
 
+@synthesize nameArray;
+@synthesize tickTime;
+
 @synthesize nameTikerView_;
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -20,36 +29,35 @@
 }
 
 #pragma mark - ButtonAction
--(void)secondTick
+-(void)tickWithTime:(NSInteger)time
 {
-    [self.nameTikerView_ setBackView:[SBTickView tickViewWithTitle:@"アザッス" fontSize:30]];
-    [self.nameTikerView_ setDuration:0.5];
+    NSString * name = [self.nameArray objectAtIndex:self.tickTime];
+    CFTimeInterval interval = (self.tickTime * 0.2) + 0.3;
+    self.tickTime ++;
+    
+    [self.nameTikerView_ setBackView:[SBTickView tickViewWithTitle:name fontSize:30]];
+    [self.nameTikerView_ setDuration:interval];
     [self.nameTikerView_ tick:SBTickerViewTickDirectionDown animated:YES completion:nil];
 }
 
-
--(void)tick:(UIButton*)sender
+-(IBAction)tick:(UIButton*)sender
 {
-    if(sender.tag == 0){
-        [self.nameTikerView_ setBackView:[SBTickView tickViewWithTitle:@"びちくそ" fontSize:30]];
-        [self.nameTikerView_ setDuration:0.2];
-        [self.nameTikerView_ tick:SBTickerViewTickDirectionDown animated:YES completion:nil];
-    }else if(sender.tag == 1){
-        [self.nameTikerView_ setBackView:[SBTickView tickViewWithTitle:@"アザッス" fontSize:30]];
-        [self.nameTikerView_ setDuration:0.5];
-        [self.nameTikerView_ tick:SBTickerViewTickDirectionDown animated:YES completion:nil];
-    }
-    
-    /*
-    [self.nameTikerView_ setBackView:[SBTickView tickViewWithTitle:@"アザッス" fontSize:30]];
-    [self.nameTikerView_ setDuration:0.5];
-    [self.nameTikerView_ tick:SBTickerViewTickDirectionDown animated:YES completion:nil];
+    [self tickWithTime:self.tickTime];
+}
 
-    [self.nameTikerView_ setBackView:[SBTickView tickViewWithTitle:@"田村航弥" fontSize:30]];
-    [self.nameTikerView_ setDuration:0.8];
-    [self.nameTikerView_ tick:SBTickerViewTickDirectionDown animated:YES completion:nil];
-     */
-    
+-(void)reset:(UIButton *)sender
+{
+    [self.nameTikerView_ setBackView:[SBTickView tickViewWithTitle:@"Hi!!" fontSize:30]];
+    [self.nameTikerView_ tick:SBTickerViewTickDirectionUp animated:YES completion:nil];
+    self.tickTime = 0;
+}
+
+#pragma mark - SBTickerViewDelegate Method
+-(void)tickerViewDidTicked:(SBTickerView *)tickerView
+{
+    if([self.nameArray count] > self.tickTime && self.tickTime != 0){
+        [self tickWithTime:self.tickTime];
+    }
 }
 
 
@@ -58,9 +66,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.nameTikerView_.delegate = self;
 	
-    [self.nameTikerView_ setFrontView:[SBTickView tickViewWithTitle:@"よしひこ" fontSize:30]];
+    [self.nameTikerView_ setFrontView:[SBTickView tickViewWithTitle:@"Hi!!" fontSize:30]];
     
+    self.nameArray = [NSArray arrayWithObjects:
+                      @"this is",
+                      @"consecutive",
+                      @"tick animation",
+                      @"Bey!!",      
+                      nil];
 }
 
 - (void)viewDidUnload

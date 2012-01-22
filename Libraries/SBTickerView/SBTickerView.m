@@ -67,6 +67,7 @@
 @synthesize frontView = _frontView;
 @synthesize backView = _backView;
 @synthesize duration = _duration;
+@synthesize delegate;
 
 @synthesize panning = _panning;
 @synthesize allowedPanDirections = _allowedPanDirections;
@@ -211,6 +212,9 @@
         completion();
     
     _flags.ticking = NO;
+    if([self.delegate respondsToSelector:@selector(tickerViewDidTicked:)]){
+        [self.delegate tickerViewDidTicked:self];
+    }
 }
 
 - (void)_pan:(UIPanGestureRecognizer *)gestureRecognizer {
