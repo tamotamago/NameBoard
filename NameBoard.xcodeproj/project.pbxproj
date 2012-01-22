@@ -15,6 +15,14 @@
 		383E0E3114C4836E002CD77B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 383E0E3014C4836E002CD77B /* AppDelegate.m */; };
 		383E0E3414C4836E002CD77B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 383E0E3214C4836E002CD77B /* MainStoryboard.storyboard */; };
 		383E0E3714C4836E002CD77B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 383E0E3614C4836E002CD77B /* ViewController.m */; };
+		3841D8A214CC35320078E3E2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3841D8A114CC35320078E3E2 /* QuartzCore.framework */; };
+		38D060FE14C84D0800132BFD /* SBDoubleSidedLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D060F714C84D0800132BFD /* SBDoubleSidedLayer.m */; };
+		38D060FF14C84D0800132BFD /* SBGradientOverlayLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D060F914C84D0800132BFD /* SBGradientOverlayLayer.m */; };
+		38D0610014C84D0800132BFD /* SBTickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D060FB14C84D0800132BFD /* SBTickerView.m */; };
+		38D0610114C84D0800132BFD /* UIView+SBExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D060FD14C84D0800132BFD /* UIView+SBExtras.m */; };
+		38D0610414C84D1E00132BFD /* SBTickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D0610314C84D1E00132BFD /* SBTickView.m */; };
+		38D0610714C84DE400132BFD /* SBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D0610614C84DE400132BFD /* SBViewController.m */; };
+		38D0610914C84E4A00132BFD /* SBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38D0610814C84E4A00132BFD /* SBViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +30,29 @@
 		383E0E2014C4836E002CD77B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		383E0E2214C4836E002CD77B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		383E0E2414C4836E002CD77B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		383E0E2814C4836E002CD77B /* NameBoard-Info.plist */ = {isa = PBXFileReference; path = "NameBoard-Info.plist"; sourceTree = "<group>"; };
+		383E0E2814C4836E002CD77B /* NameBoard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NameBoard-Info.plist"; sourceTree = "<group>"; };
 		383E0E2A14C4836E002CD77B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		383E0E2C14C4836E002CD77B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		383E0E2E14C4836E002CD77B /* NameBoard-Prefix.pch */ = {isa = PBXFileReference; path = "NameBoard-Prefix.pch"; sourceTree = "<group>"; };
-		383E0E2F14C4836E002CD77B /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		383E0E2E14C4836E002CD77B /* NameBoard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NameBoard-Prefix.pch"; sourceTree = "<group>"; };
+		383E0E2F14C4836E002CD77B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		383E0E3014C4836E002CD77B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		383E0E3314C4836E002CD77B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		383E0E3514C4836E002CD77B /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		383E0E3514C4836E002CD77B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		383E0E3614C4836E002CD77B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3841D8A114CC35320078E3E2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		38D060F614C84D0800132BFD /* SBDoubleSidedLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDoubleSidedLayer.h; path = Libraries/SBTickerView/SBDoubleSidedLayer.h; sourceTree = "<group>"; };
+		38D060F714C84D0800132BFD /* SBDoubleSidedLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBDoubleSidedLayer.m; path = Libraries/SBTickerView/SBDoubleSidedLayer.m; sourceTree = "<group>"; };
+		38D060F814C84D0800132BFD /* SBGradientOverlayLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBGradientOverlayLayer.h; path = Libraries/SBTickerView/SBGradientOverlayLayer.h; sourceTree = "<group>"; };
+		38D060F914C84D0800132BFD /* SBGradientOverlayLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBGradientOverlayLayer.m; path = Libraries/SBTickerView/SBGradientOverlayLayer.m; sourceTree = "<group>"; };
+		38D060FA14C84D0800132BFD /* SBTickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBTickerView.h; path = Libraries/SBTickerView/SBTickerView.h; sourceTree = "<group>"; };
+		38D060FB14C84D0800132BFD /* SBTickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBTickerView.m; path = Libraries/SBTickerView/SBTickerView.m; sourceTree = "<group>"; };
+		38D060FC14C84D0800132BFD /* UIView+SBExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+SBExtras.h"; path = "Libraries/SBTickerView/UIView+SBExtras.h"; sourceTree = "<group>"; };
+		38D060FD14C84D0800132BFD /* UIView+SBExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+SBExtras.m"; path = "Libraries/SBTickerView/UIView+SBExtras.m"; sourceTree = "<group>"; };
+		38D0610214C84D1E00132BFD /* SBTickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBTickView.h; sourceTree = "<group>"; };
+		38D0610314C84D1E00132BFD /* SBTickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBTickView.m; sourceTree = "<group>"; };
+		38D0610514C84DE400132BFD /* SBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBViewController.h; sourceTree = "<group>"; };
+		38D0610614C84DE400132BFD /* SBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBViewController.m; sourceTree = "<group>"; };
+		38D0610814C84E4A00132BFD /* SBViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3841D8A214CC35320078E3E2 /* QuartzCore.framework in Frameworks */,
 				383E0E2114C4836E002CD77B /* UIKit.framework in Frameworks */,
 				383E0E2314C4836E002CD77B /* Foundation.framework in Frameworks */,
 				383E0E2514C4836E002CD77B /* CoreGraphics.framework in Frameworks */,
@@ -51,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				383E0E2614C4836E002CD77B /* NameBoard */,
+				3874216514C5D82A008F3EA5 /* Libraries */,
 				383E0E1F14C4836E002CD77B /* Frameworks */,
 				383E0E1D14C4836E002CD77B /* Products */,
 			);
@@ -67,6 +91,7 @@
 		383E0E1F14C4836E002CD77B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3841D8A114CC35320078E3E2 /* QuartzCore.framework */,
 				383E0E2014C4836E002CD77B /* UIKit.framework */,
 				383E0E2214C4836E002CD77B /* Foundation.framework */,
 				383E0E2414C4836E002CD77B /* CoreGraphics.framework */,
@@ -82,6 +107,11 @@
 				383E0E3214C4836E002CD77B /* MainStoryboard.storyboard */,
 				383E0E3514C4836E002CD77B /* ViewController.h */,
 				383E0E3614C4836E002CD77B /* ViewController.m */,
+				38D0610514C84DE400132BFD /* SBViewController.h */,
+				38D0610614C84DE400132BFD /* SBViewController.m */,
+				38D0610814C84E4A00132BFD /* SBViewController.xib */,
+				38D0610214C84D1E00132BFD /* SBTickView.h */,
+				38D0610314C84D1E00132BFD /* SBTickView.m */,
 				383E0E2714C4836E002CD77B /* Supporting Files */,
 			);
 			path = NameBoard;
@@ -96,6 +126,29 @@
 				383E0E2E14C4836E002CD77B /* NameBoard-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3874216514C5D82A008F3EA5 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				38D060F414C84C9100132BFD /* SBTickerView */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		38D060F414C84C9100132BFD /* SBTickerView */ = {
+			isa = PBXGroup;
+			children = (
+				38D060F614C84D0800132BFD /* SBDoubleSidedLayer.h */,
+				38D060F714C84D0800132BFD /* SBDoubleSidedLayer.m */,
+				38D060F814C84D0800132BFD /* SBGradientOverlayLayer.h */,
+				38D060F914C84D0800132BFD /* SBGradientOverlayLayer.m */,
+				38D060FA14C84D0800132BFD /* SBTickerView.h */,
+				38D060FB14C84D0800132BFD /* SBTickerView.m */,
+				38D060FC14C84D0800132BFD /* UIView+SBExtras.h */,
+				38D060FD14C84D0800132BFD /* UIView+SBExtras.m */,
+			);
+			name = SBTickerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +204,7 @@
 			files = (
 				383E0E2B14C4836E002CD77B /* InfoPlist.strings in Resources */,
 				383E0E3414C4836E002CD77B /* MainStoryboard.storyboard in Resources */,
+				38D0610914C84E4A00132BFD /* SBViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +218,12 @@
 				383E0E2D14C4836E002CD77B /* main.m in Sources */,
 				383E0E3114C4836E002CD77B /* AppDelegate.m in Sources */,
 				383E0E3714C4836E002CD77B /* ViewController.m in Sources */,
+				38D060FE14C84D0800132BFD /* SBDoubleSidedLayer.m in Sources */,
+				38D060FF14C84D0800132BFD /* SBGradientOverlayLayer.m in Sources */,
+				38D0610014C84D0800132BFD /* SBTickerView.m in Sources */,
+				38D0610114C84D0800132BFD /* UIView+SBExtras.m in Sources */,
+				38D0610414C84D1E00132BFD /* SBTickView.m in Sources */,
+				38D0610714C84DE400132BFD /* SBViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +335,7 @@
 				383E0E3C14C4836E002CD77B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
