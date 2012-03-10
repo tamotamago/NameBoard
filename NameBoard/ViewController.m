@@ -2,8 +2,8 @@
 //  ViewController.m
 //  NameBoard
 //
-//  Created by 田村 航弥 on 12/01/17.
-//  Copyright (c) 2012年 ミクシィ. All rights reserved.
+//  Created by koya tamura on 12/01/17.
+//  Copyright (c) 2012 tamotamago. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -74,7 +74,7 @@
                       @"this is",
                       @"consecutive",
                       @"tick animation",
-                      @"Bey!!",      
+                      @"Bey!!",
                       nil];
 }
 
